@@ -48,7 +48,7 @@ function injectNav(activePage) {
   document.body.insertAdjacentHTML('afterbegin', `
   <nav id="main-nav">
     <a class="nav-brand" href="index.html">
-      <img class="nav-logo" src="images/logo.jpg" alt="Annie School Logo"/>
+      <img class="nav-logo" src="logo.jpg" alt="Annie School Logo"/>
       <div class="nav-text">
         <span class="nav-name">${SCHOOL.name}</span>
         <span class="nav-sub">Established ${SCHOOL.est} · Madanapuram, Chennai</span>
@@ -88,7 +88,7 @@ function injectFooter() {
   <footer>
     <div class="footer-grid">
       <div>
-        <img class="f-logo" src="images/logo.jpg" alt="Annie School"/>
+        <img class="f-logo" src="logo.jpg" alt="Annie School"/>
         <div class="f-name">${SCHOOL.fullName}</div>
         <p class="f-desc">Established 2010 · Nurturing young minds with Truth, Love and Wisdom in Madanapuram, Chennai. Consistent 100% board results since inception.</p>
       </div>
