@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="About Annie Matriculation Higher Secondary School — established 2010, Madanapuram, Chennai. Our story, vision, mission and leadership.">
+<title>About Us — Annie Matric Hr. Sec. School, Chennai</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.about-main { padding: 80px 5%; background: var(--white); max-width: 1160px; margin: 0 auto; }
+.about-lead { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 80px; }
+.about-lead img { width: 100%; height: 320px; object-fit: cover; border-top: 4px solid var(--crimson); }
+.about-lead h2 { font-family: var(--font-head); font-size: 2rem; color: var(--navy); margin-bottom: 16px; }
+.about-lead h2 em { font-style: italic; color: var(--crimson); }
+.about-lead p { font-size: 1.03rem; color: var(--textm); line-height: 1.9; margin-bottom: 14px; }
+.vms { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; margin-bottom: 80px; }
+.vm-card { padding: 40px 30px; text-align: center; }
+.vm-card:nth-child(1) { background: var(--crimson); }
+.vm-card:nth-child(2) { background: var(--navy); }
+.vm-card:nth-child(3) { background: var(--deep); }
+.vm-icon { font-size: 2.2rem; display: block; margin-bottom: 14px; }
+.vm-title { font-family: var(--font-ui); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold3); margin-bottom: 12px; }
+.vm-text { font-size: 0.98rem; color: rgba(255,255,255,0.6); line-height: 1.8; font-style: italic; }
+.principal-section { background: var(--cream); padding: 60px 40px; display: flex; gap: 40px; align-items: flex-start; margin-bottom: 60px; border-left: 4px solid var(--crimson); }
+.p-img { width: 120px; height: 120px; background: linear-gradient(135deg,var(--crimson),var(--navy)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; flex-shrink: 0; }
+.p-content h3 { font-family: var(--font-head); font-size: 1.5rem; color: var(--navy); margin-bottom: 4px; }
+.p-content .p-role { font-family: var(--font-ui); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; display: block; }
+.p-content p { font-size: 1rem; color: var(--textm); line-height: 1.85; font-style: italic; }
+@media(max-width:900px){ .about-lead,.vms { grid-template-columns: 1fr; } .principal-section { flex-direction: column; } }
+</style>
+</head>
+<body>
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span>About Us</div>
+    <h1>About <em>Our School</em></h1>
+    <p style="color:rgba(255,255,255,0.5);font-style:italic;margin-top:10px;">A legacy of excellence since 2010</p>
+  </div>
+</section>
+<div class="about-main">
+  <div class="about-lead reveal">
+    <img src="images/building.jpg" alt="Annie School Building"/>
+    <div>
+      <div class="eyebrow" style="justify-content:flex-start;">Our Story</div>
+      <h2>Excellence in Education<br><em>Since 2010</em></h2>
+      <p>Annie Matriculation Higher Secondary School was established in 2010 in the heart of Madanapuram, Chennai, with a singular purpose — to provide quality, value-based education to every child.</p>
+      <p>Affiliated to the Tamil Nadu Matriculation Board, we offer a complete educational journey from Class I through Class XII — Primary, Middle, Secondary, and Higher Secondary — all under one roof.</p>
+      <p>Guided by our motto of <strong>Truth, Love and Wisdom</strong>, we have grown into one of the most trusted and respected institutions in the Madanapuram region, consistently delivering 100% board results and producing district-level toppers.</p>
+    </div>
+  </div>
+  <div class="vms stagger reveal">
+    <div class="vm-card"><span class="vm-icon">🎯</span><div class="vm-title">Our Vision</div><p class="vm-text">To be a centre of academic excellence that nurtures every child's potential and prepares them for a meaningful future.</p></div>
+    <div class="vm-card"><span class="vm-icon">💡</span><div class="vm-title">Our Mission</div><p class="vm-text">To provide holistic, value-based education that combines academic rigour with moral character and life skills.</p></div>
+    <div class="vm-card"><span class="vm-icon">✦</span><div class="vm-title">Our Motto</div><p class="vm-text">Truth · Love · Wisdom — the three pillars that guide every student, teacher, and decision at Annie Matric.</p></div>
+  </div>
+  <div class="principal-section reveal">
+    <div class="p-img">🎓</div>
+    <div class="p-content">
+      <h3>Sr. Deva Sagayam</h3>
+      <span class="p-role">Principal — Annie Matric Hr. Sec. School</span>
+      <p>"At Annie Matric, we believe that every child is unique and carries within them the seeds of greatness. Our dedicated faculty and nurturing environment are designed to bring out the very best in each student — not just academically, but as complete human beings rooted in Truth, Love and Wisdom."</p>
+    </div>
+  </div>
+</div>
+<script src="components.js"></script>
+<script>
+  injectTopbar(); injectNav('About'); injectFooter();
+  const nav=document.getElementById('main-nav'),tb=document.querySelector('.topbar'),mob=document.getElementById('mobile-menu');
+  document.body.prepend(mob); document.body.prepend(nav); document.body.prepend(tb);
+</script>
+</body>
+</html>

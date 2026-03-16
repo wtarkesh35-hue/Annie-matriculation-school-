@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic programs at Annie Matric School Chennai — Primary, Middle, Secondary and Higher Secondary with Science, Commerce and Arts streams.">
+<title>Academics — Annie Matric Hr. Sec. School, Chennai</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.acad-body { padding: 80px 5%; max-width: 1160px; margin: 0 auto; }
+.acad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-bottom: 60px; }
+.acad-card { background: var(--white); padding: 44px 36px; border-top: 4px solid var(--crimson); transition: all 0.4s; }
+.acad-card:hover { box-shadow: 0 20px 60px rgba(11,15,26,0.1); transform: translateY(-4px); }
+.acad-icon { width: 56px; height: 56px; background: linear-gradient(135deg,var(--navy),var(--navy2)); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; }
+.acad-level { font-family: var(--font-ui); font-size: 0.56rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.acad-name { font-family: var(--font-head); font-size: 1.5rem; color: var(--navy); margin-bottom: 12px; }
+.acad-desc { font-size: 1rem; color: var(--textl); line-height: 1.8; font-style: italic; margin-bottom: 20px; }
+.acad-subjects { list-style: none; }
+.acad-subjects li { font-size: 0.95rem; color: var(--textm); padding: 7px 0; border-bottom: 1px solid var(--cream2); display: flex; gap: 8px; align-items: center; }
+.acad-subjects li::before { content: '✦'; color: var(--gold); font-size: 0.55rem; flex-shrink: 0; }
+.streams { background: var(--navy); padding: 60px 5%; margin: 0 -5% 60px; }
+.streams-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
+.stream-card { padding: 36px 28px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); text-align: center; transition: all 0.4s; }
+.stream-card:hover { background: rgba(201,151,10,0.08); border-color: rgba(201,151,10,0.25); }
+.stream-icon { font-size: 2.2rem; display: block; margin-bottom: 14px; }
+.stream-name { font-family: var(--font-ui); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold3); margin-bottom: 10px; }
+.stream-subjects { font-size: 0.95rem; color: rgba(255,255,255,0.45); line-height: 1.8; font-style: italic; }
+@media(max-width:900px){ .acad-grid,.streams-grid { grid-template-columns: 1fr; } .streams { margin: 0 0 60px; padding: 60px 4%; } }
+</style>
+</head>
+<body>
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span>Academics</div>
+    <h1>Academic <em>Programs</em></h1>
+    <p style="color:rgba(255,255,255,0.5);font-style:italic;margin-top:10px;">Complete education from Class I to Class XII</p>
+  </div>
+</section>
+<div class="acad-body">
+  <div class="sec-head reveal">
+    <div class="eyebrow">Programs Offered</div>
+    <h2 class="sec-title">From Foundation to <em>Higher Secondary</em></h2>
+    <p class="sec-sub">A complete educational journey — all four levels under one roof in Madanapuram, Chennai.</p>
+  </div>
+  <div class="acad-grid stagger reveal">
+    <div class="acad-card">
+      <div class="acad-icon">🌟</div>
+      <div class="acad-level">Classes I – V</div>
+      <h3 class="acad-name">Primary School</h3>
+      <p class="acad-desc">Building the foundation of curiosity, creativity and love for learning in our youngest scholars.</p>
+      <ul class="acad-subjects">
+        <li>English & Tamil Languages</li><li>Mathematics</li><li>Environmental Science</li>
+        <li>Arts & Craft</li><li>Music & Dance</li><li>Value Education & Moral Science</li>
+      </ul>
+    </div>
+    <div class="acad-card">
+      <div class="acad-icon">📐</div>
+      <div class="acad-level">Classes VI – VIII</div>
+      <h3 class="acad-name">Middle School</h3>
+      <p class="acad-desc">Deepening academic skills and building independent thinking during critical formative years.</p>
+      <ul class="acad-subjects">
+        <li>English, Tamil & Hindi</li><li>Mathematics</li><li>Science (Physics, Chemistry, Biology)</li>
+        <li>Social Science</li><li>Computer Studies</li><li>Physical Education</li>
+      </ul>
+    </div>
+    <div class="acad-card">
+      <div class="acad-icon">📚</div>
+      <div class="acad-level">Classes IX – X</div>
+      <h3 class="acad-name">Secondary School</h3>
+      <p class="acad-desc">Rigorous preparation for the Tamil Nadu Matriculation Board examinations with focused coaching.</p>
+      <ul class="acad-subjects">
+        <li>English & Tamil</li><li>Mathematics</li><li>Science</li>
+        <li>Social Science</li><li>Third Language</li><li>Board Exam Coaching</li>
+      </ul>
+    </div>
+    <div class="acad-card">
+      <div class="acad-icon">🎓</div>
+      <div class="acad-level">Classes XI – XII</div>
+      <h3 class="acad-name">Higher Secondary</h3>
+      <p class="acad-desc">Specialised streams — Science, Commerce and Arts — preparing students for higher education and careers.</p>
+      <ul class="acad-subjects">
+        <li>Science Stream (PCB / PCM)</li><li>Commerce Stream</li><li>Arts Stream</li>
+        <li>Career Guidance & Counselling</li><li>Competitive Exam Coaching</li><li>College Application Support</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="streams reveal">
+  <div style="max-width:1160px;margin:0 auto;">
+    <div class="sec-head">
+      <div class="eyebrow" style="color:var(--gold3);"><span style="flex:0 0 36px;height:1px;background:var(--gold);display:inline-block;"></span>Higher Secondary Streams<span style="flex:0 0 36px;height:1px;background:var(--gold);display:inline-block;"></span></div>
+      <h2 class="sec-title" style="color:var(--white);">Choose Your <em>Stream</em></h2>
+    </div>
+    <div class="streams-grid stagger">
+      <div class="stream-card"><span class="stream-icon">🔬</span><div class="stream-name">Science Stream</div><div class="stream-subjects">Physics · Chemistry · Biology / Mathematics · Computer Science · English</div></div>
+      <div class="stream-card"><span class="stream-icon">📊</span><div class="stream-name">Commerce Stream</div><div class="stream-subjects">Accountancy · Business Maths · Commerce · Economics · Computer Applications</div></div>
+      <div class="stream-card"><span class="stream-icon">🎨</span><div class="stream-name">Arts Stream</div><div class="stream-subjects">History · Geography · Economics · Political Science · Literature · Fine Arts</div></div>
+    </div>
+  </div>
+</div>
+<script src="components.js"></script>
+<script>
+  injectTopbar(); injectNav('Academics'); injectFooter();
+  const nav=document.getElementById('main-nav'),tb=document.querySelector('.topbar'),mob=document.getElementById('mobile-menu');
+  document.body.prepend(mob); document.body.prepend(nav); document.body.prepend(tb);
+</script>
+</body>
+</html>

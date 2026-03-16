@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Photo gallery of Annie Matriculation Higher Secondary School Chennai — campus, events, toppers and achievements.">
+<title>Gallery — Annie Matric Hr. Sec. School, Chennai</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.gallery-body { padding: 80px 5%; max-width: 1160px; margin: 0 auto; }
+.gallery-section { margin-bottom: 60px; }
+.gallery-section-title { font-family: var(--font-ui); font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--crimson); margin-bottom: 16px; display: flex; align-items: center; gap: 14px; }
+.gallery-section-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(139,26,26,0.3), transparent); }
+.gal-grid { display: grid; gap: 8px; }
+.g3 { grid-template-columns: repeat(3,1fr); }
+.g2 { grid-template-columns: repeat(2,1fr); }
+.g-item { position: relative; overflow: hidden; cursor: pointer; }
+.g-item img { width: 100%; height: 240px; object-fit: cover; transition: transform 0.5s; display: block; }
+.g-item:hover img { transform: scale(1.06); }
+.g-cap { position: absolute; inset: 0; background: linear-gradient(transparent 40%, rgba(11,15,26,0.85)); display: flex; align-items: flex-end; padding: 16px; opacity: 0; transition: opacity 0.4s; }
+.g-item:hover .g-cap { opacity: 1; }
+.g-cap span { font-family: var(--font-ui); font-size: 0.58rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); }
+.toppers-full { width: 100%; border: 1px solid var(--cream2); }
+@media(max-width:768px){ .g3 { grid-template-columns: 1fr 1fr; } }
+@media(max-width:480px){ .g3,.g2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span>Gallery</div>
+    <h1>Campus <em>Gallery</em></h1>
+    <p style="color:rgba(255,255,255,0.5);font-style:italic;margin-top:10px;">A glimpse into life at Annie Matric</p>
+  </div>
+</section>
+<div class="gallery-body">
+
+  <div class="gallery-section reveal">
+    <div class="gallery-section-title">🏫 Our Campus</div>
+    <div class="gal-grid g3">
+      <div class="g-item" style="grid-column:span 2;">
+        <img src="images/building.jpg" alt="Annie School Main Building" style="height:320px;"/>
+        <div class="g-cap"><span>Main School Building</span></div>
+      </div>
+      <div class="g-item">
+        <img src="images/ground.jpg" alt="Sports Ground" style="height:320px;"/>
+        <div class="g-cap"><span>Sports Ground</span></div>
+      </div>
+      <div class="g-item">
+        <img src="images/campus.jpg" alt="Campus Garden"/>
+        <div class="g-cap"><span>Campus Garden</span></div>
+      </div>
+      <div class="g-item">
+        <img src="images/building.jpg" alt="School Entrance"/>
+        <div class="g-cap"><span>School Entrance</span></div>
+      </div>
+      <div class="g-item">
+        <img src="images/ground.jpg" alt="Playground"/>
+        <div class="g-cap"><span>Playground & Sports Area</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-section reveal">
+    <div class="gallery-section-title">🏆 Toppers & Achievements 2025</div>
+    <img class="toppers-full" src="images/toppers.jpg" alt="Annie School Toppers 2025"/>
+  </div>
+
+</div>
+<script src="components.js"></script>
+<script>
+  injectTopbar(); injectNav('Gallery'); injectFooter();
+  const nav=document.getElementById('main-nav'),tb=document.querySelector('.topbar'),mob=document.getElementById('mobile-menu');
+  document.body.prepend(mob); document.body.prepend(nav); document.body.prepend(tb);
+</script>
+</body>
+</html>

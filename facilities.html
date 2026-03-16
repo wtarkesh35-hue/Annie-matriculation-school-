@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Facilities at Annie Matric School Chennai — Science labs, computer lab, library, sports ground, transport and more.">
+<title>Facilities — Annie Matric Hr. Sec. School, Chennai</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.fac-body { padding: 80px 5%; max-width: 1160px; margin: 0 auto; }
+.fac-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
+.fac-card { background: var(--white); padding: 40px 30px; transition: all 0.4s; border-bottom: 3px solid transparent; }
+.fac-card:hover { box-shadow: 0 20px 60px rgba(11,15,26,0.1); transform: translateY(-4px); border-bottom-color: var(--crimson); }
+.fac-icon { font-size: 2.4rem; display: block; margin-bottom: 16px; }
+.fac-title { font-family: var(--font-ui); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy); margin-bottom: 10px; }
+.fac-desc { font-size: 1rem; color: var(--textl); line-height: 1.8; font-style: italic; }
+@media(max-width:900px){ .fac-grid { grid-template-columns: 1fr 1fr; } }
+@media(max-width:600px){ .fac-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span>Facilities</div>
+    <h1>Our <em>Facilities</em></h1>
+    <p style="color:rgba(255,255,255,0.5);font-style:italic;margin-top:10px;">World-class infrastructure built for learning</p>
+  </div>
+</section>
+<div class="fac-body">
+  <div class="sec-head reveal">
+    <div class="eyebrow">Campus Infrastructure</div>
+    <h2 class="sec-title">Spaces Built to <em>Inspire</em></h2>
+    <p class="sec-sub">Every space at Annie Matric is designed to engage, inspire and elevate the learning experience.</p>
+  </div>
+  <div class="fac-grid stagger reveal">
+    <div class="fac-card"><span class="fac-icon">🔬</span><div class="fac-title">Science Laboratories</div><p class="fac-desc">Fully equipped Physics, Chemistry and Biology laboratories enabling hands-on experiments and scientific inquiry.</p></div>
+    <div class="fac-card"><span class="fac-icon">💻</span><div class="fac-title">Computer Lab</div><p class="fac-desc">Modern computer facilities with high-speed internet, empowering students with digital literacy and coding skills.</p></div>
+    <div class="fac-card"><span class="fac-icon">📖</span><div class="fac-title">Library & Reading Room</div><p class="fac-desc">A vast collection of books, journals and reference materials to inspire a lifelong love of reading and research.</p></div>
+    <div class="fac-card"><span class="fac-icon">⚽</span><div class="fac-title">Sports Grounds</div><p class="fac-desc">Spacious grounds for cricket, football, athletics and indoor games — promoting physical fitness and teamwork.</p></div>
+    <div class="fac-card"><span class="fac-icon">🎨</span><div class="fac-title">Arts & Culture</div><p class="fac-desc">Dedicated spaces for music, dance and visual arts — celebrating and nurturing every student's creative talent.</p></div>
+    <div class="fac-card"><span class="fac-icon">🚌</span><div class="fac-title">School Transport</div><p class="fac-desc">Safe, reliable transport covering key routes across Madanapuram and surrounding areas of Chennai.</p></div>
+    <div class="fac-card"><span class="fac-icon">🏫</span><div class="fac-title">Spacious Classrooms</div><p class="fac-desc">Well-ventilated, well-lit classrooms designed to provide a comfortable and focused learning environment.</p></div>
+    <div class="fac-card"><span class="fac-icon">🍽️</span><div class="fac-title">Canteen</div><p class="fac-desc">A clean, hygienic canteen providing nutritious meals and snacks for students throughout the school day.</p></div>
+    <div class="fac-card"><span class="fac-icon">🛡️</span><div class="fac-title">Safe Campus</div><p class="fac-desc">CCTV surveillance, secure entry points and dedicated staff ensuring the safety of every student at all times.</p></div>
+  </div>
+</div>
+<script src="components.js"></script>
+<script>
+  injectTopbar(); injectNav('Facilities'); injectFooter();
+  const nav=document.getElementById('main-nav'),tb=document.querySelector('.topbar'),mob=document.getElementById('mobile-menu');
+  document.body.prepend(mob); document.body.prepend(nav); document.body.prepend(tb);
+</script>
+</body>
+</html>
