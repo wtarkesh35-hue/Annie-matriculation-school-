@@ -127,27 +127,27 @@
         <div class="crow">
           <div class="cgroup">
             <label class="clabel">Student's Full Name *</label>
-            <input class="cinput" type="text" placeholder="Student's name" required/>
+            <input class="cinput" type="text" name="student_name" placeholder="Student's name" required/>
           </div>
           <div class="cgroup">
             <label class="clabel">Parent / Guardian Name *</label>
-            <input class="cinput" type="text" placeholder="Parent's name" required/>
+            <input class="cinput" type="text" name="parent_name" placeholder="Parent's name" required/>
           </div>
         </div>
         <div class="crow">
           <div class="cgroup">
             <label class="clabel">Phone Number *</label>
-            <input class="cinput" type="tel" placeholder="+91 00000 00000" required/>
+            <input class="cinput" type="tel" name="phone" placeholder="+91 00000 00000" required/>
           </div>
           <div class="cgroup">
             <label class="clabel">Email Address</label>
-            <input class="cinput" type="email" placeholder="Your email (optional)"/>
+            <input class="cinput" type="email" name="email" placeholder="Your email (optional)"/>
           </div>
         </div>
         <div class="crow">
           <div class="cgroup">
             <label class="clabel">Class Applying For *</label>
-            <select class="cselect" required>
+            <select class="cselect" name="class_applying" required>
               <option value="">Select Class</option>
               <option>Class I</option>
               <option>Class II</option>
@@ -167,7 +167,7 @@
           </div>
           <div class="cgroup">
             <label class="clabel">Medium Preferred</label>
-            <select class="cselect">
+            <select class="cselect" name="medium">
               <option value="">Select Medium</option>
               <option>English Medium</option>
               <option>Tamil Medium</option>
@@ -176,7 +176,7 @@
         </div>
         <div class="cgroup">
           <label class="clabel">Message / Questions</label>
-          <textarea class="ctextarea" placeholder="Any questions about admissions, fees, facilities..."></textarea>
+          <textarea class="ctextarea" name="message" placeholder="Any questions about admissions, fees, facilities..."></textarea>
         </div>
         <button type="submit" class="btn btn-red" style="justify-content:center;padding:16px;border:none;cursor:pointer;">✦ &nbsp; Submit Admission Enquiry</button>
         <div class="csuccess" id="formSuccess">✦ &nbsp; Enquiry Submitted Successfully! We'll contact you within 24 hours.</div>
